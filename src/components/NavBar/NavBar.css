@@ -1,0 +1,20 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    height: 75px;
+    padding-left: 10px;
+}
+
+.title {
+    color: #89CFF0;
+    font-size: 50px;
+    margin: 0;
+}
