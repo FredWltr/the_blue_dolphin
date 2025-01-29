@@ -1,0 +1,26 @@
+.opening-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.time-entry {
+    display: flex;
+    justify-content: flex-start;
+    width: 400px;
+}
+
+.day {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.time {
+    flex: 1;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
