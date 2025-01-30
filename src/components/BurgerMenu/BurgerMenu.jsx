@@ -21,7 +21,7 @@ const BurgerMenu = () => {
                         <li><NavLink onClick={toggleMenu} to="/" >Home</NavLink></li>
                         <li><NavLink onClick={toggleMenu} to="/menu" >Menu</NavLink></li>
                         <li><NavLink onClick={toggleMenu} to="https://www.doordash.com/store/the-blue-dolphin-yukon-25081844/" >Order</NavLink></li>
-                        <li><NavLink onClick={toggleMenu} to="/location" >Location</NavLink></li>
+                        <li><NavLink onClick={toggleMenu} to="/location" >Location & Hours</NavLink></li>
                     </ul>
                 </nav>
             </div>
