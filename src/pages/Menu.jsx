@@ -2,7 +2,7 @@ import "./Menu.css"
 
 const Menu = () => {
     const sandwiches = [
-        { name: "Artisan", description: "oven roasted turkey, sundried tomoto pesto spread, spinach, and muenster cheese on ciabatta toasted" },
+        { name: "Artisan", description: "oven roasted turkey, sundried tomato pesto spread, spinach, and muenster cheese on ciabatta toasted" },
         { name: "Club", description: "oven roaster turkey, blackforest ham, honey-mustard, bacon, tomato, lettuce and cheddar cheese, layered between white bread" },
         { name: "BLI", description: "bacon, mayo, lettuce and tomato on white bread toast" },
         { name: "Turkey Bacon Ranch", description: "oven roasted turkey, bacon, ranch, lettuce, tomato, and cheedar cheese on ciabatta toasted"},
@@ -35,42 +35,50 @@ const Menu = () => {
             <div>
                 <div>
                     <p>Sandwiches</p>
-                    {sandwiches.map(({name, description}) => (
-                        <div className="container">
-                            <span className="name">{name}</span> 
-                            <span className="description">{description}</span>
-                        </div>
-                    ))}
-                </div>
-                <div>
-                    <p>Salads</p>
-                    {salads.map(({name, description}) => (
-                        <div className="container">
+                    <div className="list">
+                        {sandwiches.map(({ name, description }) => (
+                        <div className="container" key={name}>
                             <span className="name">{name}</span>
                             <span className="description">{description}</span>
                         </div>
-                    ))}
-                    <div className="container">
-                        <span className="name">Dressing</span>
-                        <span className="description">{dressing}</span>
+                        ))}
+                    </div>
+                </div>
+                <div>
+                    <p>Salads</p>
+                    <div className="list">
+                        {salads.map(({name, description}) => (
+                            <div className="container">
+                                <span className="name">{name}</span>
+                                <span className="description">{description}</span>
+                            </div>
+                        ))}
+                        <div className="container">
+                            <span className="name">Dressing</span>
+                            <span className="description">{dressing}</span>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <p>Kid</p>
-                    {kid.map(({name, description}) => (
-                        <div className="container">
-                            <span className="name">{name}</span>
-                            <span className="description">{description}</span>
-                        </div>
-                    ))}
+                    <div className="list">
+                        {kid.map(({name, description}) => (
+                            <div className="container">
+                                <span className="name">{name}</span>
+                                <span className="description">{description}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 <div>
                     <p>Sides</p>
-                    {sides.map(({name}) => (
-                        <div className="container">
-                            <span className="name">{name}</span>
-                        </div>
-                    ))}
+                    <div className="list">
+                        {sides.map(({name}) => (
+                            <div className="container">
+                                <span className="name">{name}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
