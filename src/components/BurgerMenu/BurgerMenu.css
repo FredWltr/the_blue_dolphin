@@ -3,6 +3,10 @@
     color: #89CFF0;
     padding-right: 20px;
 }
+
+.menu-icon {
+    color: #89CFF0;
+}
   
 .burger-icon {
     display: flex;

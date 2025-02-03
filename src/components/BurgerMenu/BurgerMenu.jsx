@@ -1,19 +1,16 @@
 import './BurgerMenu.css'
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const BurgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen(!isOpen);
-    
+
     return (
         <div>
-            <div className="burger-menu">
-                <div className={`burger-icon ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                </div>
+            <div className="menu-icon" onClick={toggleMenu}>
+                {isOpen ? <FaTimes /> : <FaBars />}
             </div>
             <div className={`menu ${isOpen ? "open" : ""}`}>
                 <nav>

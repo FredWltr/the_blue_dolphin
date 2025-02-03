@@ -1,14 +1,32 @@
-import logo from '../../assets/logo.png'
-import './NavBar.css'
-import BurgerMenu from '../BurgerMenu/BurgerMenu'
+import logo from '../../assets/logo.png';
+import '../../styles/Main.css';
+import { useRef } from "react";
+import { NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
+    const navRef = useRef();
+
+    const showNavBar = () => {
+        navRef.current.classList.toggle("responsive_nav");
+    }
     return (
-    <nav className="navbar">
-        <img className="logo" src={logo} alt="The Blue Dolphin Logo" />
-        <h1 className="title">The Blue Dolphin</h1>
-        <BurgerMenu />
-    </nav>
+        <header>
+            <h3>The Blue Dolphin</h3>
+            <nav ref={navRef}>
+                <a href="/#">Home</a>
+                <a href="/#">Menu</a>
+                <a href="/#">Order</a>
+                <a href="/#">Location</a>
+                <a href="/#">Hours</a>
+                <button className="nav-btn nav-close-btn" onClick={showNavBar}>
+                    <FaTimes/>
+                </button>
+            </nav>
+            <button className="nav-btn" onClick={showNavBar}>
+                <FaBars/>
+            </button>
+        </header>
     );
 } 
 

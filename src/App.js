@@ -1,24 +1,19 @@
-import './App.css';
+import React from 'react';
 import NavBar from './components/NavBar/NavBar';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Home from "./pages/Home";
-import Menu from "./pages/Menu";
-import Location from "./pages/Location";
+import Body from './components/body/Body';
+import Footer from './components/footer/Footer';
+// import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+// import Home from "./pages/Home";
+// import Menu from "./pages/Menu";
+// import Location from "./pages/Location";
 
 function App() {
   return (
-    <Router> {/* Move the Router to wrap the entire App */}
-      <div className="App">
-        <header className="App-header">
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/location" element={<Location />} />
-          </Routes>
-        </header>
-      </div>
-    </Router>
+    <React.Fragment>
+      <NavBar />
+      <Body />
+      <Footer />
+    </React.Fragment>
   );
 }
 
