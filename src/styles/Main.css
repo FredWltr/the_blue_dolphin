@@ -54,6 +54,34 @@ header .nav-btn:hover {
 
 }
 
+.menu .category-title {
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.menu .list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 3rem;
+    row-gap: 0.75rem;
+    display: none;
+}
+
+.menu .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .container .description {
+    margin-left: 1rem;
+}
+
+.menu hr {
+    margin: 1rem 4rem 0 4rem;
+}
+
 .section_padding {
     padding: 4rem 4rem;
 }
@@ -187,6 +215,14 @@ header .nav-btn:hover {
 
     nav a {
         font-size: 1.5rem;
+    }
+
+    .menu .list {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        display: grid;
+        grid-template-columns: auto;
+        display: none;
     }
 
     .sb_footer-links {

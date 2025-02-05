@@ -1,18 +1,18 @@
-import "./Menu.css"
+import "../styles/Main.css"
 
 const Menu = () => {
     const sandwiches = [
-        { name: "Artisan", description: "oven roasted turkey, sundried tomato pesto spread, spinach, and muenster cheese on ciabatta toasted" },
-        { name: "Club", description: "oven roaster turkey, blackforest ham, honey-mustard, bacon, tomato, lettuce and cheddar cheese, layered between white bread" },
-        { name: "BLI", description: "bacon, mayo, lettuce and tomato on white bread toast" },
-        { name: "Turkey Bacon Ranch", description: "oven roasted turkey, bacon, ranch, lettuce, tomato, and cheedar cheese on ciabatta toasted"},
-        { name: "Turkey AVO Club", description: "oven roasted turkey, honey mustard, avocado, lettuce, tomato, muenster cheese on sourdough toasted"},
-        { name: "The 'Ultimate' Grilled Cheese", description: "cheddar cheese, muenster cheese, basil-pesto spread, and tomato on sourdough toasted"},
+        { name: "Artisan", description: "Oven roasted turkey, sundried tomato pesto spread, spinach, and muenster cheese on ciabatta toasted" },
+        { name: "Club", description: "Oven roaster turkey, blackforest ham, honey-mustard, bacon, tomato, lettuce and cheddar cheese, layered between white bread" },
+        { name: "BLT", description: "Bacon, mayo, lettuce and tomato on white bread toast" },
+        { name: "Turkey Bacon Ranch", description: "Oven roasted turkey, bacon, ranch, lettuce, tomato, and cheedar cheese on ciabatta toasted"},
+        { name: "Turkey AVO Club", description: "Oven roasted turkey, honey mustard, avocado, lettuce, tomato, muenster cheese on sourdough toasted"},
+        { name: "The 'Ultimate' Grilled Cheese", description: "Cheddar cheese, muenster cheese, basil-pesto spread, and tomato on sourdough toasted"},
     ];
     const salads = [
-        { name: "Garden Salad", description: "mixed greens, cheddar cheese, cherry tomatoes, carrots, cucumber, red onions, croutons" },
-        { name: "Greek Salad", description: "mixed greens, feta, cucumbers, red onions, kalamatta olives, cherry tomatoes, dill" },
-        { name: "Heavenly Salad", description: "spinach, feta, blueberries, avocado, candied pecans" },
+        { name: "Garden Salad", description: "Mixed greens, cheddar cheese, cherry tomatoes, carrots, cucumber, red onions, croutons" },
+        { name: "Greek Salad", description: "Mixed greens, feta, cucumbers, red onions, kalamatta olives, cherry tomatoes, dill" },
+        { name: "Heavenly Salad", description: "Spinach, feta, blueberries, avocado, candied pecans" },
     ];
     const dressing = "Ranch, sugar-free ranch, balsamic vin, honey mustard, greek, raspberry vin, champagne vin";
     const kid = [
@@ -29,12 +29,9 @@ const Menu = () => {
     ];
     return (
         <div>
-            <p>
-                Welcome to the Menu
-            </p>
-            <div>
-                <div>
-                    <p>Sandwiches</p>
+            <div className="menu">
+                <div className="menu-category">
+                    <p className="category-title">Sandwiches</p>
                     <div className="list">
                         {sandwiches.map(({ name, description }) => (
                         <div className="container" key={name}>
@@ -44,8 +41,9 @@ const Menu = () => {
                         ))}
                     </div>
                 </div>
-                <div>
-                    <p>Salads</p>
+                <hr />
+                <div className="menu-category">
+                    <p className="category-title">Salads</p>
                     <div className="list">
                         {salads.map(({name, description}) => (
                             <div className="container">
@@ -59,8 +57,9 @@ const Menu = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p>Kid</p>
+                <hr />
+                <div className="menu-category">
+                    <p className="category-title">Kid</p>
                     <div className="list">
                         {kid.map(({name, description}) => (
                             <div className="container">
@@ -70,8 +69,9 @@ const Menu = () => {
                         ))}
                     </div>
                 </div>
-                <div>
-                    <p>Sides</p>
+                <hr />
+                <div className="menu-category">
+                    <p className="category-title">Sides</p>
                     <div className="list">
                         {sides.map(({name}) => (
                             <div className="container">

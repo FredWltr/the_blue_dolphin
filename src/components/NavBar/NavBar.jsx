@@ -14,9 +14,9 @@ const NavBar = () => {
         <header>
             <h3>The Blue Dolphin</h3>
             <nav ref={navRef}>
-                <a href="/#">Home</a>
-                <a href="/#">Menu</a>
-                <a href="/#">Order</a>
+                <a href="/home">Home</a>
+                <a href="/menu">Menu</a>
+                <a href="https://www.doordash.com/store/the-blue-dolphin-yukon-25081844/">Order</a>
                 <a href="/#">Location</a>
                 <a href="/#">Hours</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
