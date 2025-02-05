@@ -54,32 +54,20 @@ header .nav-btn:hover {
 
 }
 
-.menu .category-title {
-    justify-self: center;
-    margin-top: 1rem;
+.acaiBowl {
+    max-width: 100%;
+    height: auto;
 }
 
-.menu .list {
-    margin-left: 2rem;
-    margin-right: 2rem;
+.menu-container {
+    margin: 0 3rem 0 3rem;
+}
+
+.menu-container .menu-items {
     display: grid;
     grid-template-columns: 50% 50%;
-    column-gap: 3rem;
-    row-gap: 0.75rem;
-    display: none;
-}
-
-.menu .container {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu .container .description {
-    margin-left: 1rem;
-}
-
-.menu hr {
-    margin: 1rem 4rem 0 4rem;
+    column-gap: 2rem;
+    margin: 0 2rem 0 2rem;
 }
 
 .section_padding {
@@ -217,12 +205,8 @@ header .nav-btn:hover {
         font-size: 1.5rem;
     }
 
-    .menu .list {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        display: grid;
-        grid-template-columns: auto;
-        display: none;
+    .menu-container .menu-items {
+        grid-template-columns: 100%;
     }
 
     .sb_footer-links {

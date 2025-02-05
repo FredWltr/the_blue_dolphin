@@ -16,14 +16,14 @@ const Footer = () => {
         <div className="footer">
             <div className="sb_footer section_padding">
                 <div className="sb_footer-links">
-                    <div className="sb_footer-links-div">
+                    <div id="location" className="sb_footer-links-div">
                         <h4>Location</h4>
                         <p>Yukon</p>
                         <p>845 S Mustang Rd</p>
                         <p>Yukon, OK 73099</p>
                         <a href={mapUrl} target="_blank" rel="noopener noreferrer" className="map-link">Open In Map</a>
                     </div>
-                    <div className="sb_footer-links-div">
+                    <div id="hour" className="sb_footer-links-div">
                         <h4>Hours</h4>
                         {openingTimes.map(({ day, time }) => (
                             <div className="time-entry">

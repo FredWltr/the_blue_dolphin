@@ -17,8 +17,8 @@ const NavBar = () => {
                 <a href="/home">Home</a>
                 <a href="/menu">Menu</a>
                 <a href="https://www.doordash.com/store/the-blue-dolphin-yukon-25081844/">Order</a>
-                <a href="/#">Location</a>
-                <a href="/#">Hours</a>
+                <a href="/home#location">Location</a>
+                <a href="/home#hour">Hours</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
                     <FaTimes/>
                 </button>
