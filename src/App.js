@@ -1,21 +1,20 @@
 import React from 'react';
-import NavBar from './components/NavBar/NavBar';
-import Body from './components/body/Body';
+import NavBar from './components/navBar/NavBar';
 import Footer from './components/footer/Footer';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
-import Location from "./pages/Location";
+import ScrollToTop from './components/ScroolToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Routes>
-        <Route index element={<Home />}></Route>
+        <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/location" element={<Location />} />
       </Routes>
       <Footer />
     </Router>
