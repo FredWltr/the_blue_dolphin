@@ -2,14 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 :root{
-    --mainColor: #29335C;
-    --mainColorLight: #5767aa;
-    --secondaryColor: #db2b39;
-    --textColor: #eee;
+    --mainColor: #0077B6;
+    --mainColorLight: #00f6ff;
+    --secondaryColor: #FFCC29;
+    --textColor: #00f6ff;
 }
 
 header {
@@ -57,10 +57,33 @@ header .nav-btn:hover {
 .acaiBowl {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+.home-intro {
+    margin: 2rem 0 2rem 0;
+}
+
+.home-intro strong {
+    font-size: x-large; 
+    display: block;
+    text-align: center;
+}
+
+.home-intro span {
+    margin: 0.5rem 20rem 0 20rem;
+    display: block;
+    text-align: center;
 }
 
 .menu-container {
     margin: 0 3rem 0 3rem;
+}
+
+.menu-container h2 {
+    margin-top: 0.5rem;
+    text-align: center;
+    cursor: pointer;
 }
 
 .menu-container .menu-items {
@@ -193,6 +216,10 @@ header .nav-btn:hover {
 
     header .responsive_nav {
         transform: none;
+    }
+
+    .home-intro span {
+       margin: 0.5rem 5rem 0 5rem;
     }
 
     nav .nav-close-btn {
