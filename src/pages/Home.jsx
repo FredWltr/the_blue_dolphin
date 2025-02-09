@@ -4,7 +4,9 @@ const Home = () => {
     return (
         // <div className="home"></div>
         <div>
-            <img src={acaiBowl} alt="Acai Bowl" className="acaiBowl" />
+            <div className="image-container">
+                <img src={acaiBowl} alt="Acai Bowl" className="acaiBowl" />
+            </div>
             <div className="home-intro">
                 <strong>About The Blue Dolphin</strong>
                 <span>At The Blue Dolphin,  we bring the heart of the Amazon to your bowl. Our authentic and 

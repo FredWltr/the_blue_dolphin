@@ -82,7 +82,7 @@ header .nav-btn:hover {
 }
 
 .acaiBowl {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -121,7 +121,7 @@ header .nav-btn:hover {
 }
 
 .section_padding {
-    padding: 4rem 4rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 .footer {
@@ -131,6 +131,7 @@ header .nav-btn:hover {
 .sb_footer {
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
 }
 
 .sb_footer-links {
@@ -145,13 +146,13 @@ header .nav-btn:hover {
 }
 
 .sb_footer-links-div {
-    width: 45%;
-    margin: 1rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: flex-start;
     color: var(--textColor);
+    padding-top: 1.5rem;
 }
 
 .sb_footer-links-div .time-entry {
@@ -163,6 +164,7 @@ header .nav-btn:hover {
 
 .sb_footer-links-div .day {
     text-align: right;
+    margin-right: 0.25rem;
 }
 
 .sb_footer-links-div .time {
@@ -270,7 +272,6 @@ header .nav-btn:hover {
     }
 
     .sb_footer-links div {
-        /* margin: 1rem 0; */
         width: 100%;
     }
 
