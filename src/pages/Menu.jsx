@@ -96,7 +96,7 @@ const Menu = () => {
                 onClick={() => handleSelectCategory(category)}
             >
                 <h2>{category.title}</h2>
-                {selectedCategory?.title === category.title && (
+                
                     <div className={`menu-items ${selectedCategory?.title === category.title ? 'show' : ''}`}>
                     {category.items.map((item, index) => (
                         <div className="menu-item">
@@ -107,7 +107,7 @@ const Menu = () => {
                         </div>
                     ))}
                     </div>
-                )}
+                
             </div>
         ))}
     </div>

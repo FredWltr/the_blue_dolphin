@@ -113,11 +113,18 @@ header .nav-btn:hover {
     cursor: pointer;
 }
 
-.menu-container .menu-items {
+.menu-container .menu-items{
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 2rem;
     margin: 0 2rem 0 2rem;
+    max-height: 0;
+    transition: max-height 1s ease;
+    overflow: hidden;
+}
+
+.menu-container .menu-items.show {
+    max-height: 500px;
 }
 
 .section_padding {
