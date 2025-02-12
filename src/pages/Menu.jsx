@@ -80,10 +80,15 @@ const Menu = () => {
         }
         setSelectedCategory(category);
 
-        const element = categoryRefs.current[category.title];
-        if (element) {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
+        setTimeout(() => {
+            const element = categoryRefs.current[category.title];
+            if (element) {
+                const stickyBarHeight = document.querySelector(".navbar")?.offsetHeight; // Adjust as needed
+                const yOffset = element.getBoundingClientRect().top + window.scrollY - stickyBarHeight - 10;
+    
+                window.scrollTo({ top: yOffset, behavior: "smooth" });
+            }
+        }, 1000);
     };
 
     return (
