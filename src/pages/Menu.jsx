@@ -4,14 +4,14 @@ import { useState, useRef } from "react";
 const menu_data = [
     { title: "Curated Smoothie Bowls", items: [
         { name: "Classic Bowl", description: "Your choice of bases (up to 3), granola, stawberries, banana, nutella, honey, and coconut"},
-        { name: "The Blue Dolphin Bowl", description: "Your choice of bases (up to 3), ganola, blueberries, banana, raspberries, almond-butter, date syrup, cocomut flakes, and bee pollen"},
-        { name: "Maliby Bowl", description: "Your choice of bases (up to 3), granola, kiwi, mango, pineapple, chia pudding, agave, coconut, hemp seeds"},
+        { name: "The Blue Dolphin Bowl", description: "Your choice of bases (up to 3), ganola, blueberries, banana, raspberries, almond-butter, date syrup, coconut flakes, and bee pollen"},
+        { name: "Malibu Bowl", description: "Your choice of bases (up to 3), granola, kiwi, mango, pineapple, chia pudding, agave, coconut, hemp seeds"},
         { name: "Mother Nature Bowl", description: "Your choice of bases (up to 3), granola, banana, raspberries, mapple syrup, peanut butter, chocolate-chips, toasted coconut, pepitas"},
         { name: "Rainbow Bowl", description: "Your choice of bases (up to 3), granola, banana, mango, kiwi, blueberries, chia pudding, coconut, almonds"},
     ]},
     { title: "Build Your Own Smoothie Bowls", items: [
         { name: "STEP 1", description: "Choose your size"},
-        { name: "STEP 2", description: "Choose your bases: acai, pitaya, matcha, spirulina"},
+        { name: "STEP 2", description: "Choose your bases: acai, pitaya + passion fruit, spirulina, soursop, Brazil's secret"},
         { name: "STEP 3", description: "Choose your granola: maple, vanilla, cherry, almond"},
         { name: "STEP 4", description: "Choose your fruits: banana, strawberries, blueberries, raspberries, pineapple, mango, kiwi"},
         { name: "STEP 5", description: "Choose your drizzles: nutella, almond butter, peanut butter, chia pudding, local honey, agave, maple syrup, date syrup, sweetened condensed milk"},
@@ -39,7 +39,7 @@ const menu_data = [
     { title: "Salads",  items: [
         { name: "Garden Salad", description: "Mixed greens, cheddar cheese, cherry tomatoes, carrots, cucumber, red onions, croutons" },
         { name: "Greek Salad", description: "Mixed greens, feta, cucumbers, red onions, kalamatta olives, cherry tomatoes, dill" },
-        { name: "Heavenly Salad", description: "Spinach, feta, blueberries, avocado, candied pecans" },
+        { name: "Heavenly Salad", description: "Spinach, feta, blueberries, avocado, candied pecans, strawberries" },
     ]},
     { title: "Toasts & Such", items: [
         { name: "Buttery Toast", description: "Plain w/butter"},
