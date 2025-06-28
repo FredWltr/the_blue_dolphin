@@ -161,6 +161,12 @@ header .nav-btn:hover {
     padding-top: 1.5rem;
 }
 
+.sb_footer-links-div .locations {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .sb_footer-links-div .time-entry {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -275,6 +281,10 @@ header .nav-btn:hover {
     .sb_footer-links {
         display: flex;
         flex-direction: column;
+    }
+
+    .sb_footer-links-div .locations {
+        gap: 1rem;
     }
 
     .sb_footer-links div {

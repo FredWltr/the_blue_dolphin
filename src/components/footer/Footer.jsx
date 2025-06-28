@@ -1,7 +1,9 @@
 import React from "react";
 import '../../styles/Main.css';
 
-const mapUrl = "https://www.google.com/maps?q=The+Blue+Dolphin";
+const yukonUrl = "https://www.google.com/maps/dir/?api=1&destination=The+Blue+Dolphin,+845+S+Mustang+Rd,+Yukon,+OK+73099";
+const okcUrl = "https://www.google.com/maps/dir/?api=1&destination=The+Blue+Dolphin,+726+West+Sheridan+Avenue,+Oklahoma+City,+OK";
+
 const openingTimes = [
     { day: "Monday", time: "9:00 AM - 8:00 PM" },
     { day: "Tuesday", time: "9:00 AM - 8:00 PM" },
@@ -18,10 +20,20 @@ const Footer = () => {
                 <div className="sb_footer-links">
                     <div id="location" className="sb_footer-links-div">
                         <h4>Location</h4>
-                        <p>Yukon</p>
-                        <p>845 S Mustang Rd</p>
-                        <p>Yukon, OK 73099</p>
-                        <a href={mapUrl} target="_blank" rel="noopener noreferrer" className="map-link">Open In Map</a>
+                        <div className="locations">
+                            <div>
+                                <p>Yukon</p>
+                                <p>845 S Mustang Rd</p>
+                                <p>Yukon, OK 73099</p>
+                                <a href={yukonUrl} target="_blank" rel="noopener noreferrer" className="map-link">Open In Map</a>
+                            </div>
+                            <div>
+                                <p>Oklahoma City</p>
+                                <p>726 W Sheridan Ave</p>
+                                <p>Oklahoma City, OK 73102</p>
+                                <a href={okcUrl} target="_blank" rel="noopener noreferrer" className="map-link">Open In Map</a>
+                            </div>
+                        </div>
                     </div>
                     <div id="hour" className="sb_footer-links-div">
                         <h4>Hours</h4>
