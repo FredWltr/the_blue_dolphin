@@ -19,7 +19,6 @@ const menu_data = [
         { name: "STEP 7", description: "ENJOY!"},
     ]},
     { title: "Smoothies", items: [
-        { name: "Blueberry Oatmeal", description: "Blueberries, almond milk, spinach, maple syrup, cinnamon, oats"},
         { name: "Mixed Berry", description: "Blackberries, raspberries, blueberries, almond milk"},
         { name: "Strawberry Banana", description: "Strawberries, banana, honey, almond milk"},
         { name: "Princess Peach", description: "Peach, banana, honey, coconut milk"},
@@ -30,8 +29,7 @@ const menu_data = [
     ]},
     { title: "Sandwiches", items: [
         { name: "Artisan", description: "Oven roasted turkey, sundried tomato pesto spread, spinach, and muenster cheese on ciabatta toasted" },
-        { name: "Club", description: "Oven roaster turkey, blackforest ham, honey-mustard, bacon, tomato, lettuce and cheddar cheese, layered between white bread" },
-        { name: "BLT", description: "Bacon, mayo, lettuce and tomato on white bread toast" },
+        { name: "Club", description: "Oven roaster turkey, blackforest ham, honey-mustard, bacon, tomato, lettuce and cheddar cheese, layered between milk bread" },
         { name: "Turkey Bacon Ranch", description: "Oven roasted turkey, bacon, ranch, lettuce, tomato, and cheedar cheese on ciabatta toasted"},
         { name: "Turkey AVO Club", description: "Oven roasted turkey, honey mustard, avocado, lettuce, tomato, muenster cheese on sourdough toasted"},
         { name: "The 'Ultimate' Grilled Cheese", description: "Cheddar cheese, muenster cheese, basil-pesto spread, and tomato on sourdough toasted"},
@@ -44,12 +42,10 @@ const menu_data = [
     { title: "Toasts & Such", items: [
         { name: "Buttery Toast", description: "Plain w/butter"},
         { name: "Cinnanom Toast", description: "Butter + cinnnamon sugar"},
-        { name: "Loco Coco Toast", description: "Nutella, banana, vanilla, granola, coconut, chia seeds"},
         { name: "Greenhouse Toast", description: "Sourdough toast, hummus, cucumber, feta cheese, red pepper, flakes, lemon slice, dill"},
         { name: "Italian Cottage", description: "Sourdough toast, marinara, cottage cheese, sundried tomatoes, hot noney, oregano, basil, red pepper flakes"},
         { name: "Avo Toast", description: "Sourdough toast, avocada, sundried tomato, feta cheese, red pepper flakes, salt, pepper, lemon juice"},
         { name: "Yogurt Parfait", description: "Vanilla greek yogurt, vanilla granola, strawberries, blueberries"},
-        { name: "Oatmeal", description: "Choose your sweetner: honey agave, maple syrup, choose up to four toppings/drizzles (see smoothies bowl menu for options"},
     ]},
     { title: "Kid", items: [
         { name: "Ham and Cheese" },
